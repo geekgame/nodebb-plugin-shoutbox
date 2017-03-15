@@ -44,6 +44,18 @@
 				}
 			}
 		},
+		pin: {
+			info: {
+				usage: '/pin message',
+				description: 'Pin a message on the top of the shoutbox. do not specify message to clear it' 
+			},
+			handlers: {
+				action: function(argument, sendShout) {
+					sendShout(argument);
+					# NOW STORE THE DATA SOMEWHERE AND LOAD IT ON ALL OTHER CHATS
+				}
+			}
+		},
 		wobble: soundCommand('wobble', 'WOBULLY SASUGE'),
 		cena: soundCommand('cena', 'AND HIS NAME IS')
 	};
